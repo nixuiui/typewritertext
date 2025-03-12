@@ -225,21 +225,23 @@ class _X extends State<TypeWriter> {
                 alignment: widget.alignment,
                 width: widget.maintainSize ? painter.width : null,
                 height: widget.maintainSize ? painter.height : null,
-                child: Text(
-                  controller.value.text,
-                  selectionColor: widget.selectionColor,
-                  key: widget.key,
-                  locale: widget.locale,
-                  maxLines: widget.maxLines,
-                  overflow: widget.overflow ?? TextOverflow.visible,
-                  semanticsLabel: widget.semanticsLabel,
-                  softWrap: widget.softWrap,
-                  strutStyle: widget.strutStyle,
-                  style: widget.style,
-                  textAlign: widget.textAlign,
-                  textDirection: widget.textDirection,
-                  textHeightBehavior: widget.textHeightBehavior,
-                  textWidthBasis: widget.textWidthBasis,
+                child: LaTexT(
+                  laTeXCode: Text(
+                    controller.value.text,
+                    selectionColor: widget.selectionColor,
+                    key: widget.key,
+                    locale: widget.locale,
+                    maxLines: widget.maxLines,
+                    overflow: widget.overflow ?? TextOverflow.visible,
+                    semanticsLabel: widget.semanticsLabel,
+                    softWrap: widget.softWrap,
+                    strutStyle: widget.strutStyle,
+                    style: widget.style,
+                    textAlign: widget.textAlign,
+                    textDirection: widget.textDirection,
+                    textHeightBehavior: widget.textHeightBehavior,
+                    textWidthBasis: widget.textWidthBasis,
+                  )
                 ),
               );
             }

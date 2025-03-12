@@ -4,6 +4,7 @@ library typewritertext;
 
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:latext/latext.dart';
 
 part 'v3/typewriter.dart';
 part 'v3/typewriter_controller.dart';
